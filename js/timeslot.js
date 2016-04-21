@@ -1,3 +1,12 @@
+function formattime(value){
+  var hour1=(value>>1)+8;
+  var min1=(value%2)?':30':':00';
+  var hour2=(value%2)?hour1+1:hour1;
+  var min2=(value%2)?':00':':30';
+  hour1=(hour1<10)?'0'+hour1.toString():hour1.toString();
+  hour2=(hour2<10)?'0'+hour2.toString():hour2.toString();
+  return hour1+min1+'-'+hour2+min2;
+}
 function slotunit(color, value, clickable) {
   var wapper = '<div class="time-slot';
   switch (color) {
@@ -15,7 +24,7 @@ function slotunit(color, value, clickable) {
   if (clickable) wapper += ' time-slot-click';
   wapper += '" value="' + value + '" ';
   if (clickable) wapper += 'onclick="timeslotclick.call(this)" ';
-  wapper += 'style="width: 3%"></div>';
+  wapper += 'style="width: 3%" data-toggle="tooltip" data-placement="top" title="'+formattime(value)+'"></div>';
   return wapper;
 };
 
@@ -29,7 +38,14 @@ function timeslotclick() {
   timeslots = timeslots.join(',');
   this.parentElement.parentElement.setAttribute("value", timeslots);
   this.parentElement.parentElement.getElementsByTagName('input')[0].setAttribute("value", timeslots);
-  timeslotize([this.parentElement.parentElement]);
+  if(this.classList.contains('time-slot-success')){
+    this.classList.remove('time-slot-success');
+    this.classList.add('time-slot-danger');
+  }
+  else{
+    this.classList.remove('time-slot-danger');
+    this.classList.add('time-slot-success');
+  }
 }
 
 function timeslotize(divs) {
@@ -99,4 +115,5 @@ function timeslotize(divs) {
 
 $(document).ready(function() {
   timeslotize($('.time-board'));
+  $('.time-slot').tooltip();
 });
