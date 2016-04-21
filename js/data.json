@@ -1,0 +1,274 @@
+{
+    "basics": {
+        "name": "Yiding Liu",
+        "tel": "OTc5NTcxODg2MA==",
+        "email": "bHlkQHRhbXUuZWR1",
+        "links": [
+            {
+                "name": "github",
+                "link": "https://github.com/petrosliu"
+            },
+            {
+                "name": "linkedin",
+                "link": "http://www.linkedin.com/in/ydliu"
+            },
+            {
+                "name": "instagram",
+                "link": "https://www.instagram.com/petrosliu/"
+            },
+            {
+                "name": "wechat",
+                "link": "http://weixin.qq.com/r/uvu2rtjE_IWHrZzN966o"
+            },
+            {
+                "name": "resume",
+                "link": "https://www.dropbox.com/s/f3kphtk0zyv4hli/Yiding%20Liu%20Resume.pdf?raw=1"
+            }
+        ],
+        "summary": [
+            "Second-year Aggie majors in Information Science & System with great ambition to benefit lives with cutting-edge technology. Multi-platform professional with diverse skills include software/hardware development and web/native app design. Deep in image, video and 3D scene processing and analysis involving machine learning techniques. Hard-working and goal-oriented developer",
+            "Seeking to apply my abilities to a position of Software Engineer in 2016."
+        ],
+        "portrait": "img/portrait.png",
+        "others": {
+            "backportrait": "img/portraitback.png",
+            "formattedtel": "PGkgY2xhc3M9ImZhIGZhLWFuZ2xlLWxlZnQiPjwvaT45Nzk8aSBjbGFzcz0iZmEgZmEtYW5nbGUtcmlnaHQiPjwvaT41NzEtODg2MA==",
+            "formattedemail": "bHlkPGkgY2xhc3M9ImZhIGZhLWF0Ij48L2k+dGFtdS5lZHU="
+        }
+    },
+    "education": {
+        "colleges": [
+            {
+                "name": "Texas A&M University",
+                "logo": "img/Texas_A&M_University_Logo.svg",
+                "logowidth": "44px",
+                "color": "#500000",
+                "degree": "Master of Science",
+                "major": "Information Science & System",
+                "location": "College Station, TX",
+                "time": "August 2016",
+                "gpa": "3.9",
+                "overall": "4.0",
+                "courses": [
+                    "Analysis of Algorithms",
+                    "Software Engineering",
+                    "Machine Learning with Neural Networks",
+                    "Pattern Recognition",
+                    "Digital Image Processing",
+                    "Statistical Communication Theory",
+                    "Linear Network Analysis"
+                ]
+            },
+            {
+                "name": "Nanjing University",
+                "logo": "img/Nanjing_University_Logo.svg",
+                "logowidth": "38px",
+                "color": "#63065f",
+                "degree": "Bachelor of Science",
+                "major": "Electrical Information Science & Technology",
+                "location": "Nanjing, China",
+                "time": "July 2014",
+                "gpa": "3.4",
+                "overall": "4.0",
+                "courses": [
+                    "C++ and Object Oriented Programming",
+                    "Website Programming: JSP and MYSQL",
+                    "Introduction to Database",
+                    "Cryptography and Information Security",
+                    "Theory of Information and Coding",
+                    "Microprocessors and Embedded System"
+                ]
+            }
+        ],
+        "others": [
+            {
+                "name": "Coursera",
+                "color": "#0068b0",
+                "courses": [
+                    "Front-End Web UI Frameworks and Tools",
+                    "Machine Learning",
+                    "Artificial Intelligence Planning",
+                    "Using Python to Access Web Data",
+                    "iOS App Development Basics"
+                ]
+            }
+        ]
+    },
+    "skills": [
+        {
+            "kind": "Languages",
+            "items": [
+                "C/C++",
+                "Python",
+                "JavaScript",
+                "Ruby",
+                "SQL",
+                "Shell Scripting",
+                "Swift"
+            ]
+        },
+        {
+            "kind": "Web Development",
+            "items": [
+                "JavaScript",
+                "Ruby on Rails",
+                "Python",
+                "Bootstrap",
+                "HTML",
+                "CSS",
+                "XML",
+                "JSON"
+            ]
+        },
+        {
+            "kind": "Tools",
+            "items": [
+                "Visual Studio",
+                "Matlab",
+                "Linux",
+                "Git",
+                "OpenGL",
+                "OpenCV",
+                "Xcode",
+                "LaTeX"
+            ]
+        },
+        {
+            "kind": "Others",
+            "items": [
+                "Computer Graphics",
+                "Image/Video Processing",
+                "Machine Learning",
+                "Artificial Intelligence"
+            ]
+        }
+    ],
+    "experience": {
+        "works": [
+            {
+                "title": "C++ Developer",
+                "location": "Media Lab, Department of Electrical & Computer Engineering, Texas A&M University, TX",
+                "time": "January 2015 - Present",
+                "description": [
+                    "Designed a JPEG XR encoder in C++ to support efficient and precise control of bit rate and SNR.",
+                    "Proposed an image format based on JPEG XR to store 3D geophysical data (SEG-Y) with floating-point values in any range."
+                ],
+                "link": "https://github.com/petrosliu/JPEGXR-Extended",
+                "logo": "fa fa-fw fa-cog faa-shake faa-slow animated",
+                "images": [
+                    "img/exp/exp1.1.png",
+                    "img/exp/exp1.2.png"
+                ]
+            },
+            {
+                "title": "Research Internship",
+                "location": "CG Lab, Institute of Computer Science & Technology, Peking University, Beijing, China",
+                "time": "July 2013 - May 2014",
+                "description": [
+                    "Designed a 3D calibration method of multiple cameras used in a dynamic 3D object reconstruction system based on Image-Based Visual Hulls (IBVH) by improving a classical solution to the P4P problem in order to adapt to cubic calibration object and multiple control points.",
+                    "Proposed an algorithm to evaluate the scope of view angles in the calibration system and to help designers test the feasibility of designed calibration object by quantifying the error of calibration in the rotation matrix, the translation vector, etc."
+                ],
+                "link": "https://github.com/petrosliu/Camera-Calibration",
+                "logo": "fa fa-fw fa-github",
+                "images": [
+                    "img/exp/exp2.1.png",
+                    "img/exp/exp2.2.png",
+                    "img/exp/exp2.3.png"
+                ]
+            },
+            {
+                "title": "Research Assistant",
+                "location": "Embedded Software/Hardware R&D Center, Nanjing University, Nanjing, China",
+                "time": "September 2012 - July 2013",
+                "description": [
+                    "Proposed an algorithm to denoise and complete KINECT depth map by matching with detected edges of RGB maps.",
+                    "Built a mobile robot platform for KINECT to exchange movement commands and measurement with PC.",
+                    "Implemented Simultaneous Localization and Mapping (SLAM) algorithm to reconstruct 3D indoor scene with KINECT depth and RGB video and robot movement automatically."
+                ],
+                "link": "https://github.com/petrosliu/Mobile-Robot-Platform",
+                "logo": "fa fa-fw fa-github",
+                "images": [
+                    "img/exp/exp3.1.png",
+                    "img/exp/exp3.2.png",
+                    "img/exp/exp3.3.png"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "Mentor Matching System",
+                "description": [
+                    "Built a student community website with Ruby on Rails, PostgreSQL, JavaScript and Bootstrap to help students and mentors form teams for competitions.",
+                    "Exploited SaaS model, RESTful API and agile development with a team of 6."
+                ],
+                "link": "https://github.com/GoldenMinerGo/Mentor-Matching-System",
+                "logo": "fa fa-fw fa-cog faa-shake faa-slow animated",
+                "organization": "TAMU Honors Program"
+            },
+            {
+                "title": "Genetic Prognosis",
+                "description": [
+                    "Identified gene-expression signatures in a genetic dataset with LDA, KNN and SVM algorithms.",
+                    "Analyzed the performance of multiple classifier design, error estimation, and feature selection techniques."
+                ],
+                "link": "https://github.com/petrosliu/Genetic-Prognosis",
+                "logo": "fa fa-fw fa-github",
+                "organization": "Pattern Recognition"
+            },
+            {
+                "title": "Network Optimization",
+                "description": [
+                    "Implemented a network routing protocol in Python with Dijkstra’s and Kruskal’s max- bandwidth-path algorithms and multiple data structures."
+                ],
+                "link": "https://github.com/petrosliu/Network-Optimization",
+                "logo": "fa fa-fw fa-github",
+                "organization": "Analysis of Algorithms"
+            },
+            {
+                "title": "Website Design",
+                "description": [
+                    "Designed a restaurant website supporting reservation and review using JavaScript and Bootstrap."
+                ],
+                "link": "https://github.com/petrosliu/Restaurant-Website",
+                "logo": "fa fa-fw fa-github",
+                "organization": "Front-End Web UI Frameworks and Tools"
+            },
+            {
+                "title": "Photo Filter iOS App",
+                "description": [
+                    "Developed a universal photo editing app for iOS in Swift to offer multiple blend filters and tunings."
+                ],
+                "link": "https://github.com/petrosliu/Photo-Filter-App",
+                "logo": "fa fa-fw fa-github",
+                "organization": "iOS App Development Basics"
+            }
+        ]
+    },
+    "honors": [
+        {
+            "title": "Graduate Merit Scholarship",
+            "awarder": "Texas A&M University",
+            "time": "2015"
+        },
+        {
+            "title": "Graduate Merit Scholarship",
+            "awarder": "Texas A&M University",
+            "time": "2014"
+        },
+        {
+            "title": "People’s Scholarship",
+            "awarder": "Nanjing University",
+            "time": "2013"
+        },
+        {
+            "title": "People’s Scholarship",
+            "awarder": "Nanjing University",
+            "time": "2012"
+        },
+        {
+            "title": "Outstanding League Member",
+            "awarder": "Student Union, Nanjing University",
+            "time": "2010"
+        }
+    ]
+}
