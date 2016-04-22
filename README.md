@@ -4,7 +4,7 @@
 ```javascript
 $(document).ready(function() {
   timeslotize($('.time-board'));
-  $('.time-slot').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 });
 ```
 ## Examples
