@@ -27,6 +27,7 @@
 
 .time-head > .time-slot {
     text-align: left;
+    padding-left: 10%;
 }
 
 .time-slot-primary {
