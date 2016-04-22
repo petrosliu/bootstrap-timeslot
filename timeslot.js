@@ -50,7 +50,7 @@ function timeslotclick() {
 
 function timeslotize(divs) {
   var header = '<div class=time-head><div class=time-slot style=width:10%></div><div class=time-slot style=width:6%>8</div><div class=time-slot style=width:6%>9</div><div class=time-slot style=width:6%>10</div><div class=time-slot style=width:6%>11</div><div class=time-slot style=width:6%>12</div><div class=time-slot style=width:6%>13</div><div class=time-slot style=width:6%>14</div><div class=time-slot style=width:6%>15</div><div class=time-slot style=width:6%>16</div><div class=time-slot style=width:6%>17</div><div class=time-slot style=width:6%>18</div><div class=time-slot style=width:6%>19</div><div class=time-slot style=width:6%>20</div><div class=time-slot style=width:6%>21</div><div class=time-slot style=width:6%>22</div><div class=time-slot style=width:6%>23</div></div>';
-  var days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
+  var days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
   for (var idiv = 0; idiv < divs.length; idiv++) {
     var div = divs[idiv];
