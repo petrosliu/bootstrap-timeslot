@@ -22,11 +22,10 @@
     color: #000;
     background-color: transparent;
 }
+
 .time-slot > p {
     text-align: center;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: "";
 }
 
 .time-head > .time-slot > p {
