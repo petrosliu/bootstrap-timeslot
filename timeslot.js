@@ -87,7 +87,6 @@ function timeslotize(divs) {
         for (var j = 0; j < 7; j++) {
           wrapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
           for (var k = 0; k < 32; k++) {
-            var status = (values[j] >> k) & 0x1 + (values[j + 7] >> k) & 0x1;
             if ((values[j] >> k) & 0x1 && (values[j + 7] >> k) & 0x1) {
               wrapper += slotunit('success', k, false);
             } else if ((values[j + 7] >> k) & 0x1) {
