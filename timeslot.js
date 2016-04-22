@@ -7,25 +7,15 @@ function formattime(value){
   hour2=(hour2<10)?'0'+hour2.toString():hour2.toString();
   return hour1+min1+'-'+hour2+min2;
 }
+
 function slotunit(color, value, clickable) {
-  var wapper = '<div class="time-slot';
-  switch (color) {
-    case 'yellow':
-      wapper += ' time-slot-warning';
-      break;
-    case 'red':
-      wapper += ' time-slot-danger';
-      break;
-    case 'green':
-      wapper += ' time-slot-success';
-      break;
-    default:
-  }
-  if (clickable) wapper += ' time-slot-click';
-  wapper += '" value="' + value + '" ';
-  if (clickable) wapper += 'onclick="timeslotclick.call(this)" ';
-  wapper += 'style="width: 3%" data-toggle="tooltip" data-placement="top" title="'+formattime(value)+'"></div>';
-  return wapper;
+  var wrapper = '<div class="time-slot';
+  wrapper += ' time-slot-' + color;
+  if (clickable) wrapper += ' time-slot-click';
+  wrapper += '" value="' + value + '" ';
+  if (clickable) wrapper += 'onclick="timeslotclick.call(this)" ';
+  wrapper += 'style="width: 3%" data-toggle="tooltip" data-placement="top" title="'+formattime(value)+'"></div>';
+  return wrapper;
 };
 
 function timeslotclick() {
@@ -54,7 +44,7 @@ function timeslotize(divs) {
 
   for (var idiv = 0; idiv < divs.length; idiv++) {
     var div = divs[idiv];
-    var wapper = header;
+    var wrapper = header;
     var values = div.getAttribute("value");
     if (values == null) values = '0,0,0,0,0,0,0';
     values = values.split(",");
@@ -66,55 +56,50 @@ function timeslotize(divs) {
     if (div.classList.contains("time-board-input")) {
       if (values.length == 7) {
         for (var j = 0; j < 7; j++) {
-          wapper += '<div class="time-bar" value="' + j + '"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
+          wrapper += '<div class="time-bar" value="' + j + '"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
           for (var k = 0; k < 32; k++) {
             if ((values[j] >> k) & 0x1) {
-              wapper += slotunit('green', k, true);
+              wrapper += slotunit('success', k, true);
             } else {
-              wapper += slotunit('red', k, true);
+              wrapper += slotunit('danger', k, true);
             }
           }
-          wapper += '</div>';
+          wrapper += '</div>';
         }
-        wapper += '<input type="text" name="'+div.getAttribute('inputname') +'" value="' + div.getAttribute("value") + '" hidden>';
+        wrapper += '<input type="text" name="'+div.getAttribute('inputname') +'" value="' + div.getAttribute("value") + '" hidden>';
       }
     }
     else {
       if (values.length == 7) {
         for (var j = 0; j < 7; j++) {
-          wapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
+          wrapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
           for (var k = 0; k < 32; k++) {
             if ((values[j] >> k) & 0x1) {
-              wapper += slotunit('green', k, false);
+              wrapper += slotunit('success', k, false);
             } else {
-              wapper += slotunit('null', k, false);
+              wrapper += slotunit('null', k, false);
             }
           }
-          wapper += '</div>';
+          wrapper += '</div>';
         }
       }
       else if (values.length == 14) {
         for (var j = 0; j < 7; j++) {
-          wapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
+          wrapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
           for (var k = 0; k < 32; k++) {
             var status = (values[j] >> k) & 0x1 + (values[j + 7] >> k) & 0x1;
             if ((values[j] >> k) & 0x1 && (values[j + 7] >> k) & 0x1) {
-              wapper += slotunit('green', k, false);
+              wrapper += slotunit('success', k, false);
             } else if ((values[j + 7] >> k) & 0x1) {
-              wapper += slotunit('yellow', k, false);
+              wrapper += slotunit('warning', k, false);
             } else {
-              wapper += slotunit('null', k, false);
+              wrapper += slotunit('null', k, false);
             }
           }
-          wapper += '</div>';
+          wrapper += '</div>';
         }
       }
     }
-    div.innerHTML = wapper;
+    div.innerHTML = wrapper;
   }
 };
-
-$(document).ready(function() {
-  timeslotize($('.time-board'));
-  $('.time-slot').tooltip();
-});

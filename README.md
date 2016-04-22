@@ -2,8 +2,10 @@
 *[Demo](http://timeslot.liuyid.in)*
 ## Usage
 ```javascript
-timeslotize($('.time-board'));
-$('.time-slot').tooltip();
+$(document).ready(function() {
+  timeslotize($('.time-board'));
+  $('.time-slot').tooltip();
+});
 ```
 ## Examples
 ### Empty Table
@@ -23,5 +25,5 @@ $('.time-slot').tooltip();
 
 ### Input Table
 ```html
-<div class='time-board-input time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00' inputname='child[time_slot]'></div>
+<div class='time-board time-board-input time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00' inputname='child[time_slot]'></div>
 ```
