@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>bootstrap timeslot</title>
+    <title>Bootstrap Timeslot</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/timeslot.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -15,8 +15,15 @@
 
 <body>
     <div class='container'>
-
         <div class='row'>
+            <div class='col-sm-12'>
+                <h1>Bootstrap Timeslot</h1>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <h2>Empty Table</h2>
+            </div>
             <div class='col-sm-12'>
                 <div class='time-board time-board-hover'></div>
             </div>
@@ -24,11 +31,17 @@
 
         <div class='row'>
             <div class='col-sm-12'>
+                <h2>Single Table</h2>
+            </div>
+            <div class='col-sm-12'>
                 <div class='time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0x00F803F8,0xFFF00,0xFFF800,0xF00'></div>
             </div>
         </div>
 
         <div class='row'>
+            <div class='col-sm-12'>
+                <h2>Comparison Table</h2>
+            </div>
             <div class='col-sm-12'>
                 <div class='time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0x00F803F8,0xFFF00,0xFFF800,0xF00,0xF00,0xFFF800,xFFF00,0xFFF00,0xFF0,0x00F803F8,0x3FF80'></div>
             </div>
@@ -36,9 +49,16 @@
 
         <div class='row'>
             <div class='col-sm-12'>
+                <h2>Input Table</h2>
+            </div>
+            <div class='col-sm-12'>
                 <form>
-                    <div class='time-board-input time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0x00F803F8,0xFFF00,0xFFF800,0xF00' inputname='child[time_slot]'></div>
-                    <input type="submit" value="Submit">
+                    <div class="form-group">
+                        <div class='time-board-input time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0x00F803F8,0xFFF00,0xFFF800,0xF00' inputname='child[time_slot]'></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
