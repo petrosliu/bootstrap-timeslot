@@ -27,6 +27,9 @@
 
 .time-head > .time-slot {
     text-align: left;
+}
+
+.time-head > .time-slot > p {
     padding-left: 10%;
 }
 
