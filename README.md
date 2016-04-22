@@ -1,5 +1,5 @@
 # Bootstrap Timeslot 
-*[Demo](http://timeslot.liuyid.in)*
+*[Demo](https://petrosliu.github.io/bootstrap-timeslot)*
 ## Usage
 ```javascript
 timeslotize($('.time-board'));
