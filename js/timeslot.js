@@ -61,6 +61,7 @@ function timeslotize(divs) {
     for (var i = 0; i < values.length; i++) {
       values[i] = +values[i];
     }
+    div.setAttribute("value",values.join(','));
 
     if (div.classList.contains("time-board-input")) {
       if (values.length == 7) {
@@ -76,9 +77,9 @@ function timeslotize(divs) {
           wapper += '</div>';
         }
         wapper += '<input type="text" name="'+div.getAttribute('inputname') +'" value="' + div.getAttribute("value") + '" hidden>';
-        div.innerHTML = wapper;
       }
-    } else {
+    }
+    else {
       if (values.length == 7) {
         for (var j = 0; j < 7; j++) {
           wapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
@@ -91,8 +92,8 @@ function timeslotize(divs) {
           }
           wapper += '</div>';
         }
-        div.innerHTML = wapper;
-      } else if (values.length == 14) {
+      }
+      else if (values.length == 14) {
         for (var j = 0; j < 7; j++) {
           wapper += '<div class="time-bar"><div class="time-slot" style="width: 10%">' + days[j] + '</div>';
           for (var k = 0; k < 32; k++) {
@@ -107,9 +108,9 @@ function timeslotize(divs) {
           }
           wapper += '</div>';
         }
-        div.innerHTML = wapper;
       }
     }
+    div.innerHTML = wapper;
   }
 };
 
