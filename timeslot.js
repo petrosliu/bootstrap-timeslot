@@ -56,7 +56,7 @@ function timeslotize(divs) {
     if (div.classList.contains("time-board-input")) {
       if (values.length == 7) {
         for (var j = 0; j < 7; j++) {
-          wrapper += '<div class="time-bar" value="' + j + '"><div class="time-slot" style="width: 4%">' + days[j] + '</div>';
+          wrapper += '<div class="time-bar" value="' + j + '"><div class="time-slot" style="width: 4%"><p>' + days[j] + '</p></div>';
           for (var k = 0; k < 32; k++) {
             if ((values[j] >> k) & 0x1) {
               wrapper += slotunit('success', k, true);
@@ -72,7 +72,7 @@ function timeslotize(divs) {
     else {
       if (values.length == 7) {
         for (var j = 0; j < 7; j++) {
-          wrapper += '<div class="time-bar"><div class="time-slot" style="width: 4%">' + days[j] + '</div>';
+          wrapper += '<div class="time-bar"><div class="time-slot" style="width: 4%"><p>' + days[j] + '</p></div>';
           for (var k = 0; k < 32; k++) {
             if ((values[j] >> k) & 0x1) {
               wrapper += slotunit('success', k, false);
@@ -85,7 +85,7 @@ function timeslotize(divs) {
       }
       else if (values.length == 14) {
         for (var j = 0; j < 7; j++) {
-          wrapper += '<div class="time-bar"><div class="time-slot" style="width: 4%">' + days[j] + '</div>';
+          wrapper += '<div class="time-bar"><div class="time-slot" style="width: 4%"><p>' + days[j] + '</p></div>';
           for (var k = 0; k < 32; k++) {
             if ((values[j] >> k) & 0x1 && (values[j + 7] >> k) & 0x1) {
               wrapper += slotunit('success', k, false);
