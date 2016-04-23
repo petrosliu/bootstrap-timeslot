@@ -48,6 +48,9 @@ function timeslotize(divs) {
     var values = div.getAttribute("value");
     if (values == null) values = '0,0,0,0,0,0,0';
     values = values.split(",");
+    if (values.length != 7 || values.length != 14){
+      values = '0,0,0,0,0,0,0'.split(",");
+    }
     for (var i = 0; i < values.length; i++) {
       values[i] = +values[i];
     }
