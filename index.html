@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://rawgit.com/petrosliu/bootstrap-timeslot/master/timeslot.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,12 +20,15 @@
     <div class='container'>
         <div class='row'>
             <div class='col-sm-12'>
-                <h1>Bootstrap Timeslot <a class="btn btn-default" href="https://github.com/petrosliu/bootstrap-timeslot"><i class="fa fa-github" aria-hidden="true"></i> README</a></h1>
+                <h1>Timeslot<i class="fa fa-times fa-fw fa-lg fa-spin" style="color:#5cb85c;" aria-hidden="true"></i>Bootstrap <a class="btn btn-default" href="https://github.com/petrosliu/bootstrap-timeslot"><i class="fa fa-github" aria-hidden="true"></i> README</a></h1>
+            </div>
+            <div class='col-sm-12'>
+                <div id="url"></div>
             </div>
         </div>
         <div class='row'>
             <div class='col-sm-12'>
-                <h2>Empty Table</h2>
+                <h2><i class="fa fa-calendar-o fa-fw" aria-hidden="true"></i> Empty Table</h2>
             </div>
             <div class='col-sm-12'>
                 <pre class="prettyprint">&lt;div class='time-board time-board-hover'&gt;&lt;/div&gt;</pre>
@@ -32,11 +36,14 @@
             <div class='col-sm-12'>
                 <div class='time-board time-board-hover'></div>
             </div>
+            <div class='col-sm-12'>
+                <hr>
+            </div>
         </div>
 
         <div class='row'>
             <div class='col-sm-12'>
-                <h2>Single Table</h2>
+                <h2><i class="fa fa-calendar-check-o fa-fw" aria-hidden="true"></i> Single Table</h2>
             </div>
             <div class='col-sm-12'>
                 <pre class="prettyprint">&lt;div class='time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00'&gt;&lt;/div&gt;</pre>
@@ -44,11 +51,14 @@
             <div class='col-sm-12'>
                 <div class='time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00'></div>
             </div>
+            <div class='col-sm-12'>
+                <hr>
+            </div>
         </div>
 
         <div class='row'>
             <div class='col-sm-12'>
-                <h2>Comparison Table</h2>
+                <h2><i class="fa fa-calendar-times-o fa-fw" aria-hidden="true"></i> Comparison Table</h2>
             </div>
             <div class='col-sm-12'>
                 <pre class="prettyprint">&lt;div class='time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00,0xF00,0xFFF800,0xFFF00,0xFFF00,0xFF0,0xF803F8,0x3FF80'&gt;&lt;/div&gt;</pre>
@@ -56,11 +66,14 @@
             <div class='col-sm-12'>
                 <div class='time-board time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00,0xF00,0xFFF800,0xFFF00,0xFFF00,0xFF0,0xF803F8,0x3FF80'></div>
             </div>
+            <div class='col-sm-12'>
+                <hr>
+            </div>
         </div>
 
         <div class='row'>
             <div class='col-sm-12'>
-                <h2>Input Table</h2>
+                <h2><i class="fa fa-calendar-plus-o fa-fw" aria-hidden="true"></i> Input Table</h2>
             </div>
             <div class='col-sm-12'>
                 <pre class="prettyprint">&lt;div class='time-board time-board-input time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00' inputname='child[time_slot]'&gt;&lt;/div&gt;</pre>
@@ -71,18 +84,21 @@
                         <div class='time-board time-board-input time-board-hover' value='0xFFF00,0x3FF80,0xFF0,0xF803F8,0xFFF00,0xFFF800,0xF00' inputname='child[time_slot]'></div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Check the URL">Submit</button>
+                        <button type="submit" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Check the URL">Submit</button>
                     </div>
                 </form>
+            </div>
+            <div class='col-sm-12'>
+                <hr>
             </div>
         </div>
     </div>
     <footer style='height: 60px;'>
         <div class='container'>
             <div class="row">
-                <div class='col-sm-12' align="center"><small style="color: black;">
-                    Copyright &copy; 2016 <a href='http://liuyid.in/' style="text-decoration: none; color: black;">Yiding Liu</a><br>
-                    Built with <a href='http://getbootstrap.com/' style="text-decoration: none; color: black;">Bootstrap</a>, <a href='https://fortawesome.github.io/Font-Awesome/' style="text-decoration: none; color: black;">Font Awesome</a> and more. <a href='https://github.com/petrosliu/bootstrap-timeslot' style="text-decoration: none; color: black;"><i class='fa fa-github'></i></a>
+                <div class='col-sm-12' align="center"><small style="color: gray;">
+                    Copyright &copy; 2016 <a href='http://liuyid.in/' style="text-decoration: none; color: gray;">Yiding Liu</a><br>
+                    Built with <a href='http://getbootstrap.com/' style="text-decoration: none; color: gray;">Bootstrap</a>, <a href='https://fortawesome.github.io/Font-Awesome/' style="text-decoration: none; color: gray;">Font Awesome</a> and more. <a href='https://github.com/petrosliu/bootstrap-timeslot' style="text-decoration: none; color: gray;"><i class='fa fa-github'></i></a>
                 </small></div>
             </div>
         </div>
@@ -92,7 +108,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/petrosliu/bootstrap-timeslot/master/timeslot.js"></script>
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-    <script> $(document).ready(function(){timeslotize($('.time-board'));$('[data-toggle="tooltip"]').tooltip();});</script>
+    <script> $(document).ready(function(){timeslotize($('.time-board'));$('[data-toggle="tooltip"]').tooltip();if(window.location.href.indexOf('?') != -1){$('#url')[0].innerHTML='<b>Current URL:</b> <pre>'+window.location.href+'</pre>';}else{$('#url')[0].setAttribute("hidden", true);}});</script>
     <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-71764085-1', 'auto');ga('send', 'pageview');</script>
 </body>
 
