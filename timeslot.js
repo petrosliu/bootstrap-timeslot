@@ -10,11 +10,15 @@ function formattime(value){
 
 function slotunit(color, value, clickable) {
   var wrapper = '<div class="time-slot';
-  wrapper += ' time-slot-' + color;
+  if(color!='null') wrapper += ' time-slot-' + color;
   if (clickable) wrapper += ' time-slot-click';
   wrapper += '" value="' + value + '" ';
   if (clickable) wrapper += 'onclick="timeslotclick.call(this)" ';
-  wrapper += 'style="width: 3%" data-toggle="tooltip" data-placement="top" title="'+formattime(value)+'"></div>';
+  wrapper += 'style="width: 3%"';
+  if(color!='null') wrapper += ' data-toggle="tooltip" data-placement="top" data-delay=\'{"show":"500", "hide":"100"}\' title="'+formattime(value)+'"';
+  wrapper += '>';
+  if(color=='warning') wrapper += '<p><i class="fa fa-times" aria-hidden="true"></i></p>';
+  wrapper += '</div>';
   return wrapper;
 };
 

@@ -46,24 +46,14 @@
     padding-left: 10%;
 }
 
-.time-slot-primary {
-    color: #fff;
-    background-color: #337ab7;
-}
-
 .time-slot-success {
     color: #fff;
     background-color: #5cb85c;
 }
 
-.time-slot-info {
-    color: #fff;
-    background-color: #5bc0de;
-}
-
 .time-slot-warning {
-    color: #fff;
-    background-color: #f0ad4e;
+    color: #6cc86c;
+    background-color: #4ca84c;
 }
 
 .time-slot-danger {
