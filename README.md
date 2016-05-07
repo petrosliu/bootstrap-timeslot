@@ -1,4 +1,4 @@
-# Bootstrap Timeslot 
+# Timeslot × Bootstrap 
 *[Demo](http://timeslot.liuyid.in)*
 ## Usage
 ```javascript
